@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayNext - MIMESIS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo-link">
+        <div class="logo-section">
+            <img src="images/logo.png" alt="Logo">
+            <h1>PlayNext</h1>
+        </div>
+    </a>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
+
+    <input
+    type="text"
+    id="searchInput"
+    placeholder="Search games...">
+    </nav>
+
+<section class="details-container">
+
+    <div class="left-side">
+
+        <img src="images/game1.png" class="main-cover">
+
+        <div class="game-description">
+            <h3>Description</h3>
+
+            <p>
+                MIMESIS is a cooperative horror game where players must survive
+                terrifying encounters while trying to identify hidden threats.
+                Teamwork, observation and strategic decision-making are essential
+                in order to escape and complete objectives successfully.
+            </p>
+
+            <div class="rating-section">
+
+                <select id="userRating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+                <button id="rateBtn">
+                    Rate this game
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="right-side">
+
+        <h2>MIMESIS</h2>
+
+        <div class="rating-display">
+            Rating:
+            <span id="gameRating">8.5</span>/10
+        </div>
+
+        <div class="game-info">
+
+            <h3>Game Info</h3>
+
+            <p>Release Date: 27 Oct, 2025</p>
+
+            <p>Developer: ReLU Games, Inc.</p>
+
+            <p>Publisher: ReLU Games, Inc.</p>
+
+            <p>Genre: Horror</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="screenshots-section">
+
+    <h2>Screenshots</h2>
+
+    <div class="screenshots-grid">
+
+     <img src="images/screen1.png" class="gallery-image">
+     <img src="images/screen2.png" class="gallery-image">
+     <img src="images/screen3.png" class="gallery-image">
+
+    </div>
+
+    <div id="lightbox" class="lightbox">
+
+        <span class="close-btn">&times;</span>
+
+        <img id="lightbox-img">
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

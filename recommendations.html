@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayNext - Recommendations</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html" class="logo-link">
+        <div class="logo-section">
+            <img src="images/logo.png" alt="Logo">
+            <h1>PlayNext</h1>
+        </div>
+    </a>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a class="active" href="recommendations.html">Recommendations</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search games..."
+    >
+</nav>
+
+<section class="recommendations-page">
+
+    <h2>Recommendations</h2>
+
+    <!-- ACTION SECTION -->
+    <div class="genre-section" id="actionSection">
+
+        <h3>More Action Games You Might Like</h3>
+
+        <div class="recommendation-grid">
+
+            <div class="recommendation-game">
+                <img src="images/game2.png">
+                <p>⭐ 9.7 ★★★★★</p>
+            </div>
+
+            <div class="recommendation-game">
+                <img src="images/game6.png">
+                <p>⭐ 9.3 ★★★★★</p>
+            </div>
+
+            <div class="recommendation-game">
+                <img src="images/game9.png">
+                <p>⭐ 9.0 ★★★★★</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- HORROR SECTION -->
+    <div class="genre-section" id="horrorSection">
+
+        <h3>More Horror Games You Might Like</h3>
+
+        <div class="recommendation-grid">
+
+            <div class="recommendation-game">
+                <img src="images/game5.png">
+                <p>⭐ 9.4 ★★★★★</p>
+            </div>
+
+            <div class="recommendation-game">
+                <img src="images/game7.png">
+                <p>⭐ 9.2 ★★★★★</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
