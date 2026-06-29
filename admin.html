@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PlayNext - Admin Panel</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="index.html" class="logo-link">
+
+<div class="logo-section">
+
+<img src="images/logo.png">
+
+<h1>PlayNext</h1>
+
+</div>
+
+</a>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="catalog.html">Catalog</a></li>
+
+<li><a href="recommendations.html">Recommendations</a></li>
+
+<li><a href="profile.html">Profile</a></li>
+
+</ul>
+
+</nav>
+
+<section class="admin-page">
+
+<h2>Admin Dashboard</h2>
+
+<div class="admin-form">
+
+<input
+type="text"
+id="gameTitle"
+placeholder="Game Title">
+
+<input
+type="text"
+id="gameGenre"
+placeholder="Genre">
+
+<input
+type="text"
+id="gameRelease"
+placeholder="Release Date">
+
+<input
+type="text"
+id="gameDeveloper"
+placeholder="Developer">
+
+<input
+type="text"
+id="gamePublisher"
+placeholder="Publisher">
+
+<textarea
+id="gameDescription"
+placeholder="Description">
+</textarea>
+
+<input
+type="text"
+id="gameImage"
+placeholder="Image (example: images/game10.png)">
+
+<button id="addGameBtn">
+
+Add Game
+
+</button>
+
+<hr>
+
+<h2>Manage Games</h2>
+
+<div id="gamesList"></div>
+
+</div>
+
+</section>
+
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>

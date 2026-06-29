@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayNext - Profile</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo-link">
+        <div class="logo-section">
+            <img src="images/logo.png" alt="Logo">
+            <h1>PlayNext</h1>
+        </div>
+    </a>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
+
+    <input type="text" placeholder="Search games...">
+</nav>
+
+<section class="profile-page">
+
+    <h2>Profile</h2>
+
+    <div class="profile-header">
+
+        <div class="profile-image-section">
+
+            <img id="profileImage"
+                 src="images/default-user.png"
+                 alt="Profile">
+
+            <input type="file"
+                   id="imageUpload"
+                   accept="image/*">
+
+        </div>
+
+        <div class="profile-info">
+
+            <h3 id="username"></h3>
+
+            <textarea
+                id="userDescription"
+                placeholder="Add info"></textarea>
+
+            <button id="saveProfile">
+                Save Profile
+            </button>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="rated-games-section">
+
+        <h3>Rated Games</h3>
+
+        <div id="ratedGamesContainer">
+
+        </div>
+
+    </div>
+
+</section>
+<script>
+
+if(
+    localStorage.getItem("loggedIn")
+    !== "true"
+){
+
+    window.location.href =
+    "login.html";
+
+}
+
+</script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
